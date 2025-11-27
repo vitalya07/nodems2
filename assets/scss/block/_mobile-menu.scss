@@ -1,0 +1,42 @@
+.mobile__menu {
+    position: absolute;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100vh;
+    padding: 100px 0 0 30px;
+    background-color: $mainColor;
+    transition: all .4s ease;
+    &-list {
+        margin-bottom: 30px;
+        & > li {
+            & > a {
+                @include fontsRegular;
+                font-size: 30px;
+                color: $whiteColor;
+            }
+        }
+    }
+    &-lung {
+        display: block;
+        @include fontsBold;
+        font-size: 30px;
+        color: $whiteColor;
+        margin-bottom: 30px;
+    }
+    &-phones {
+        display: flex;
+        align-items: start;
+        justify-content: start;
+        flex-direction: column;
+        &--phone {
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            gap: 20px;
+            @include fontsBold;
+            font-size: 30px;
+            color: $whiteColor;
+        }
+    }
+}

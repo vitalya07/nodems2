@@ -1,0 +1,12 @@
+@mixin fontsBold {
+    font-family: 'Montserrat-Bold', Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: normal;
+}
+@mixin fontsRegular {
+    font-family: 'cuprum', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: normal;
+}

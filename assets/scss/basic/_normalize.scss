@@ -1,0 +1,51 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+    @include fontsRegular;
+    color: $blackColor;
+    font-size: 22px;  
+}
+ul {
+    list-style: none;
+}
+button {
+    border: none;
+    background-color: #00000000;
+    transition: all .4s ease;
+    &:focus {
+        outline: 1px solid #00000000;
+    }
+}
+label {
+    display: block;
+}
+input {
+    border: none;
+    transition: all .4s ease;
+    display: block;
+    margin: 0;
+    padding: 0;
+    &:focus {
+        outline: 1px solid #00000000;
+    }
+}
+textarea {
+    display: block;
+    border: none;
+    transition: all .4s ease;
+    resize: none;
+    &:focus {
+        outline: 1px solid #00000000;
+    }
+}
+a {
+    text-decoration: none;
+}

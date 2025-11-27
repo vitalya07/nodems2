@@ -1,0 +1,45 @@
+.container {
+    width: 100%;
+    max-width: 1250px;
+    margin: 0 auto;
+}
+.body__container {
+    position: relative;
+    overflow: hidden;
+}
+.btn {
+    width: 100%;
+    max-width: 250px;
+    height: 50px;
+    border-radius: 20px;
+    border: 2px solid $mainColor;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include fontsBold;
+    font-size: 26px;
+    color: $mainColor;
+}
+.menu__active {
+    .mobile__menu {
+        right: 0;
+    }
+    .hamburger {
+        & > span {
+            background-color: $whiteColor;
+            &:first-child {
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%) rotate(45deg);
+            }
+            &:nth-child(2) {
+                opacity: 0;
+            }
+            &:last-child {
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%) rotate(-45deg);
+            }
+        }
+    }
+}

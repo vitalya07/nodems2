@@ -1,0 +1,66 @@
+.header {
+    padding: 10px 0;
+    border-bottom: 2px dashed $mainColor;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+    }
+    &__nav {
+        &-list {
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            gap: 20px;
+            & > li {
+                & > a {
+                    @include fontsRegular;
+                    font-size: 30px;
+                    color: $mainColor;
+                }
+            }
+        }
+    }
+    &__lung {
+        @include fontsBold;
+        font-size: 30px;
+        color: $mainColor;
+    }
+    &__left {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        gap: 20px;
+    }
+    &__right {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        gap: 50px;
+    }
+    &__phones {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 20px;
+        &-phone {
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            gap: 10px;
+            @include fontsRegular;
+            font-size: 30px;
+            color: $mainColor;
+            & > img {
+                width: 23px;
+                height: 23px;
+            }
+        }
+    }
+}
