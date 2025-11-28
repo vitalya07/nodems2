@@ -1,0 +1,70 @@
+.umzug {
+    padding: 100px 0;
+    &__title {
+        text-align: center;
+        margin-bottom: 80px;
+    }
+    &__wrapper {
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+        margin-bottom: 80px;
+    }
+    &__left {
+        width: 60%;
+        &-title {
+            @include fontsBold;
+            font-size: 33px;
+            margin-bottom: 30px;
+            color: $mainColor;
+        }
+        &-description {
+            @include fontsRegular;
+            font-size: 24px;
+            color: $blackColor;
+            margin-bottom: 30px;
+        }
+        &-feedback {
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            gap: 20px;
+            &--else {
+                @include fontsBold;
+                font-size: 33px;
+            }
+            &--social {
+                display: flex;
+                align-items: center;
+                justify-content: 10px;
+            }
+            &--link {
+                display: block;
+                width: 30px;
+                height: 30px;
+                & > img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+    &__right {
+        width: 30%;
+        &-img {
+            width: 100%;
+            height: 500px;
+            & > picture {
+                width: 100%;
+                height: 100%;
+                display: block;
+                 border-radius: 20px;
+                & > img {
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 20px;
+                }
+            }
+        }
+    }    
+}

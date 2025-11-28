@@ -1,6 +1,6 @@
 .container {
     width: 100%;
-    max-width: 1250px;
+    max-width: 1450px;
     margin: 0 auto;
 }
 .body__container {
@@ -17,8 +17,13 @@
     align-items: center;
     justify-content: center;
     @include fontsBold;
-    font-size: 26px;
+    line-height: 1.1;
+    font-size: 23px;
     color: $mainColor;
+    cursor: pointer;
+    &:hover {
+        box-shadow: 2px 2px 10px $mainColor;
+    }
 }
 .menu__active {
     .mobile__menu {
@@ -42,4 +47,9 @@
             }
         }
     }
+}
+.title {
+    @include fontsBold;
+    font-size: 50px;
+    color: $mainColor;
 }

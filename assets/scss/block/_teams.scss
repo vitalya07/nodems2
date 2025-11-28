@@ -1,0 +1,69 @@
+.teams {
+    padding: 100px 0;
+    &__title {
+        width: 100%;
+        max-width: 700px;
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 80px;
+    }
+    &__grid {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        flex-wrap: wrap;
+        &-item {
+            position: relative;
+            border-radius: 20px;
+            box-shadow: 10px 10px 10px $grayColor;
+            width: 450px;
+            height: 550px;
+            &::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: #00000060;
+                z-index: 10;
+                border-radius: 20px;
+            }
+            &--img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                & > img {
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 20px;
+                }
+            }
+            &--title {
+                @include fontsBold;
+                width: 70%;
+                font-size: 20px;
+                color: $whiteColor;
+                position: absolute;
+                bottom: 100px;
+                left: 50%;
+                transform: translateX(-50%);
+                z-index: 11;
+            }
+            &--name {
+                @include fontsBold;
+                width: 70%;
+                font-size: 20px;
+                color: $whiteColor;
+                position: absolute;
+                bottom: 50px;
+                left: 50%;
+                transform: translateX(-50%);
+                z-index: 11;
+            }
+        }
+    }
+}

@@ -7,4 +7,5 @@ document.addEventListener('DOMContentLoaded', ()=> {
         header.classList.toggle('menu__active');
     });
     // Мобильное меню конец
+
 })
