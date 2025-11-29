@@ -1,5 +1,245 @@
+@media (max-width: 1280px) {
+    .header {
+            &__nav {
+                &-list {
+                    gap: 10px;
+                    & > li {
+                        & > a {
+                            font-size: 24px;
+                        }
+                    }
+                }
+            }
+            &__lung {
+                font-size: 24px;
+            }
+            &__phones {
+                &-phone {
+                    font-size: 24px;
+                }
+            }
+    }
+    .services {
+        &__grid {
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+        }
+    }
+    .teams {
+        &__grid {
+            &-item {
+                width: 360px;
+                &--title {
+                    width: 90%;
+                }
+                &--name {
+                    width: 90%;
+                }
+            }
+        }
+    }
+    .umzug {
+        &__left {
+            width: 50%;
+        }
+        &__right {
+            width: 48%;
+        }
+    }
+    .about {
+        &__wrapper {
+            &-item {
+                width: 320px;
+            }
+        }
+    }
+}
 @media(max-width: 993px) {
+    .header {
+        &__nav {
+            display: none;
+        }
+        &__lung {
+            display: none;
+        }
+        &__phones {
+            display: none;
+        }
+    }
     .hamburger {
         display: block;
+    }
+    .main {
+        &__wrapper {
+            flex-direction: column;
+        }
+        &__images {
+            margin-bottom: 100px;
+        }
+    }
+    .services {
+        &__grid {
+          grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+          &-item {
+            padding: 15px;
+            &--icon {
+                width: 30px;
+                height: 30px;
+                margin-bottom: 15px;
+            }
+            &--title {
+                font-size: 22px;
+                margin-bottom: 15px;
+            }
+            &--description {
+                font-size: 16px;
+                & > a {
+                    font-size: 16px;
+                }
+            }
+          }
+        }
+    }
+    .umzug {
+        &__wrapper {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        &__left {
+            width: 100%;
+            margin-bottom: 40px;
+        }
+        &__right {
+            width: 100%;
+            margin-bottom: 40px;
+        }
+    }
+    .about {
+        padding: 0 0 100px 0;
+        &__wrapper {
+            &-item {
+                padding: 15px;
+                width: 280px;
+            }
+        }
+    }
+}
+@media (max-width:768px) {
+    .title {
+        font-size: 33px;
+    }
+    .main {
+        &__information {
+            max-width: 100%;
+        }
+    }
+    .teams {
+        &__grid {
+            &-item {
+                width: 340px;
+            }
+        }
+    }
+    .about {
+        &__wrapper {
+            flex-direction: column;
+            &-item {
+                width: 100%;
+                max-width: 100%;
+                margin-bottom: 30px;
+            }
+        }
+    }
+    .footer {
+        &__wrapper {
+            flex-wrap: wrap;
+            &-policy {
+                font-size: 16px;
+            }
+            &-warning {
+                font-size: 16px;
+            }
+        }
+    }
+}
+@media (max-width:556px) {
+    .main {
+        &__images {
+            &-logo {
+                width: 300px;
+                height: 300px;
+            }
+        }
+    }
+    .orbit {
+        width: 300px;
+        height: 300px;
+    }
+    .services {
+        padding: 50px 0;
+        &__title {
+            margin-bottom: 20px;
+        }
+    }
+    .teams {
+        padding: 50px 0;
+        &__grid {
+            &-item {
+                width: 100%;
+            }
+        }
+    }
+    .umzug {
+        padding: 50px 0;
+        &__title {
+            margin-bottom: 20px;
+        }
+        &__left {
+            &-title {
+                font-size: 22px;
+                margin-bottom: 10px;
+            }
+        }
+    }
+    .reviews {
+        padding: 50px 0;
+        &__button {
+            &-prev {
+                top: 75px;
+            }
+            &-next {
+                top: 75px;
+            }
+        }
+    }
+    .feedback {
+        height: 800px;
+        padding: 50px 0;
+        &__title {
+            margin-bottom: 15px;
+        }
+        &__subtitle {
+            margin-bottom: 15px;
+            line-height: 1.2;
+        }
+        &__form {
+            &-input {
+                height: 50px;
+                font-size: 18px;
+            }
+            &-msg {
+                font-size: 18px;
+                height: 90px;
+            }
+        }
+    }
+    .footer {
+        padding: 50px 0;
+    }
+    .btn {
+        font-size: 16px;
+    }
+    .title {
+        font-size: 28px;
     }
 }

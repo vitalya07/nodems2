@@ -2,6 +2,7 @@
     width: 100%;
     max-width: 1450px;
     margin: 0 auto;
+    padding: 0 15px;
 }
 .body__container {
     position: relative;
@@ -52,4 +53,18 @@
     @include fontsBold;
     font-size: 50px;
     color: $mainColor;
+}
+.open-modal {
+     visibility: visible; 
+    //  opacity: 1;
+    .popup__dialog {
+        transform: scale(1);
+    }
+}
+.close-modal {
+    visibility: hidden;
+    opacity: 0;
+    .popup__dialog {
+        transform: scale(0);
+    }
 }

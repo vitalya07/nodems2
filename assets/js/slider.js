@@ -6,7 +6,26 @@ document.addEventListener('DOMContentLoaded', ()=> {
             nextEl: '.reviews__button-next',
             prevEl: '.reviews__button-prev',
         },
-        slidesPerView: 3,
-        spaceBetween: 20,
+        
+        breakPoints: {
+            1024: {
+                slidesPerView: 3,
+                spaceBetween: 20,
+            },
+            992: {
+            slidesPerView: 2,
+            spaceBetween: 10,
+            },
+            // Когда ширина экрана <= 768px
+            768: {
+            slidesPerView: 2,
+            spaceBetween: 10,
+            },
+            // Когда ширина экрана <= 480px
+            480: {
+            slidesPerView: 1,
+            spaceBetween: 0,
+            }
+        }
     })
 })
