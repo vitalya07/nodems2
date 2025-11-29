@@ -1304,6 +1304,9 @@ img {
   .header__nav {
     display: none;
   }
+  .header__nav-list {
+    display: none;
+  }
   .header__lung {
     display: none;
   }

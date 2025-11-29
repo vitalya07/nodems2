@@ -57,6 +57,9 @@
     .header {
         &__nav {
             display: none;
+            &-list {
+                display: none;
+            }
         }
         &__lung {
             display: none;
