@@ -1,0 +1,19 @@
+.footer {
+    padding: 150px 0;
+    background-color: $mainColor;
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &-policy {
+            @include fontsBold;
+            font-size: 22px;
+            color: $whiteColor;
+        }
+        &-warning {
+            @include fontsBold;
+            font-size: 22px;
+            color: $whiteColor;
+        }
+    }
+}   

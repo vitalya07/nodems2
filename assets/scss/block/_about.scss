@@ -1,0 +1,35 @@
+.about {
+    padding: 100px 0;
+    &__title {
+        text-align: center;
+        margin-bottom: 80px;
+    }
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &-item {
+            border: 1px solid $grayColor;
+            padding: 30px;
+            width: 100%;
+            max-width: 400px;
+            min-height: 300px;
+            border-radius: 30px;
+            box-shadow: 5px 5px 10px $mainColor;
+            &--number {
+                width: 40px;
+                height: 40px;
+                padding: 10px;
+                border-radius: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: 1px solid $mainColor;
+                margin-bottom: 30px;
+                @include fontsBold;
+                font-size: 20px;
+                color: $mainColor;
+            }
+        }
+    }
+}
