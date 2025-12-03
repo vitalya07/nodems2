@@ -24,19 +24,6 @@
             grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
         }
     }
-    .teams {
-        &__grid {
-            &-item {
-                width: 360px;
-                &--title {
-                    width: 90%;
-                }
-                &--name {
-                    width: 90%;
-                }
-            }
-        }
-    }
     .umzug {
         &__left {
             width: 50%;
@@ -136,13 +123,6 @@
             max-width: 100%;
         }
     }
-    .teams {
-        &__grid {
-            &-item {
-                width: 340px;
-            }
-        }
-    }
     .about {
         &__wrapper {
             flex-direction: column;
@@ -182,14 +162,6 @@
         padding: 50px 0;
         &__title {
             margin-bottom: 20px;
-        }
-    }
-    .teams {
-        padding: 50px 0;
-        &__grid {
-            &-item {
-                width: 100%;
-            }
         }
     }
     .umzug {
