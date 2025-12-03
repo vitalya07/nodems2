@@ -32,6 +32,7 @@
             &--else {
                 @include fontsBold;
                 font-size: 33px;
+                color: $mainColor;
             }
             &--social {
                 display: flex;

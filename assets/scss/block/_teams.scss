@@ -1,68 +1,93 @@
 .teams {
-    padding: 100px 0;
     &__title {
-        width: 100%;
-        max-width: 700px;
         text-align: center;
-        margin: 0 auto;
-        margin-bottom: 80px;
+        margin-bottom: 30px;
     }
-    &__grid {
+    &__subtitle {
+        text-align: center;
+        width: 60%;
+        margin: 0 auto;
+        @include fontsBold;
+        color: $mainColor;
+        margin-bottom: 80px;
+        font-size: 22px;
+    }
+    &__wrapper {
         display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 15px;
-        flex-wrap: wrap;
-        &-item {
-            position: relative;
-            border-radius: 20px;
-            box-shadow: 10px 10px 10px $grayColor;
-            width: 450px;
-            height: 550px;
-            &::before {
-                content: "";
-                position: absolute;
-                top: 0;
-                left: 0;
+        align-items: start;
+        justify-content: space-between;
+        margin-bottom: 150px;
+    }
+    &__box {
+        width: 45%;
+    }
+    &__left {      
+        &-title {
+            @include fontsBold;
+            font-size: 33px;
+            margin-bottom: 40px;
+        }
+        &-subtitle {
+            @include fontsBold;
+            font-size: 22px;
+            margin-bottom: 40px;
+        }
+        &-descr {
+            @include fontsRegular;
+            font-size: 22px;
+            color: $grayColor;
+            margin-bottom: 40px;
+        }
+        &-list {
+            list-style: disc;
+            &--title {
+                @include fontsBold;
+                font-size: 22px;
+                color: $blackColor;
+                margin-bottom: 30px;
+            }
+            &--item {
+                @include fontsRegular;
+                font-size: 22px;
+                color: $grayColor;
+                margin-left: 30px;
+            }
+        }
+    }
+    &__img {
+        width: 450px;
+        height: auto;
+        & > picture {
+            & > img {
                 width: 100%;
                 height: 100%;
-                background-color: #00000060;
-                z-index: 10;
                 border-radius: 20px;
             }
+            
+        }
+    }
+    &__line {
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+        &-item {
+            width: 30%;
             &--img {
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
+                width: 220px;
+                height: 220px;
+                border-radius: 100%;
+                margin-bottom: 20px;
                 & > img {
                     width: 100%;
                     height: 100%;
-                    border-radius: 20px;
+                    border-radius: 100%;
                 }
-            }
-            &--title {
-                @include fontsBold;
-                width: 70%;
-                font-size: 20px;
-                color: $whiteColor;
-                position: absolute;
-                bottom: 100px;
-                left: 50%;
-                transform: translateX(-50%);
-                z-index: 11;
             }
             &--name {
                 @include fontsBold;
-                width: 70%;
-                font-size: 20px;
-                color: $whiteColor;
-                position: absolute;
-                bottom: 50px;
-                left: 50%;
-                transform: translateX(-50%);
-                z-index: 11;
+                font-size: 22px;
+                color: $blackColor;
+                margin-bottom: 15px;
             }
         }
     }

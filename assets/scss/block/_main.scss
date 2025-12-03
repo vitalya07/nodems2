@@ -55,7 +55,7 @@
         &-else {
             @include fontsBold;
             font-size: 30px;
-            color: $blackColor;
+            color: $mainColor;
         }
         &__social {
             &--link {
