@@ -476,13 +476,15 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10px;
 }
 .main__images {
   position: relative;
-  width: 400px;
+  width: 500px;
+  height: 410px;
 }
 .main__images-img {
   width: 90px;
@@ -493,8 +495,9 @@ img {
   height: 100%;
 }
 .main__images-logo {
-  width: 350px;
-  height: 350px;
+  width: 400px;
+  height: 400px;
+  margin: 0 auto;
 }
 .main__images-logo img {
   width: 100%;
@@ -555,19 +558,13 @@ img {
   height: 100%;
 }
 
-.main__images {
-  position: relative;
-  width: 300px;
-  height: 300px;
-}
-
 /* КРУГОВАЯ ОРБИТА */
 .orbit {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 300px;
-  height: 300px;
+  width: 600px;
+  height: 600px;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   -webkit-animation: rotateOrbit 10s linear infinite;
